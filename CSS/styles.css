@@ -31,6 +31,8 @@ main {
 header {
     background-color: black;
     padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
 }
 
 footer {
@@ -69,12 +71,11 @@ nav ul li {
 
 
 .header-menu {
-    left: auto;
-    position: relative;
-    top: auto;
-    width: auto;
-    display: inline-block;
-    margin: 0.5rem 0 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+
 }
 
 .servicios {
@@ -85,4 +86,53 @@ nav ul li {
     background-color: #fff;
     margin-bottom: 20px;
     padding: 20px;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+
+.nav-list {
+    display: flex;
+    gap: 1rem;
+
+}
+
+@media screen and (max-width: 550px) {
+    .abrir-menu {
+        display: block;
+        border: 0;
+        font-size: 2rem;
+        cursor: pointer;
+
+    }
+
+
+
+    .header-menu {
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 2rem;
+    }
+
+    .header-menu.visible {
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: start;
+
+
+
+
+    }
 }
