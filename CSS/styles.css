@@ -1,5 +1,6 @@
 * {
-    /* padding: 0; */
+    margin: 5PX;
+    padding: 5PX;
     box-sizing: border-box;
 }
 
@@ -135,4 +136,10 @@ nav ul li {
 
 
     }
+}
+
+h2 {
+    font-family: 'Phudu', sans-serif;
+    font-family: 'Raleway', sans-serif;
+
 }
